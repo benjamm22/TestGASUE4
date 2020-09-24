@@ -57,6 +57,18 @@ public:
 	FGameplayAttributeData MoveSpeed;
 	ATTRIBUTE_ACCESSORS(UTGAttributeSet, MoveSpeed)
 
+	// Current Health, when 0 we expect owner to die unless prevented by an ability. Capped by MaxHealth.
+	// Positive changes can directly use this.
+	// Negative changes to Health should go through Damage meta attribute.
+	UPROPERTY(BlueprintReadOnly, Category = "Health", ReplicatedUsing = OnRep_Health)
+	FGameplayAttributeData Health;
+	ATTRIBUTE_ACCESSORS(UTGAttributeSet, Health)
+
+	// MaxHealth is its own attribute since GameplayEffects may modify it
+	UPROPERTY(BlueprintReadOnly, Category = "MaxHealth", ReplicatedUsing = OnRep_MaxHealth)
+	FGameplayAttributeData MaxHealth;
+	ATTRIBUTE_ACCESSORS(UTGAttributeSet, MaxHealth)
+
 protected:
 
 	// Helper function to proportionally adjust the value of an attribute when it's associated max attribute changes.
@@ -70,5 +82,10 @@ protected:
 	UFUNCTION()
 	virtual void OnRep_MoveSpeed(const FGameplayAttributeData& OldMoveSpeed);
 
+	UFUNCTION()
+	virtual void OnRep_Health(const FGameplayAttributeData& OldHealth);
+
+	UFUNCTION()
+	virtual void OnRep_MaxHealth(const FGameplayAttributeData& OldMaxHealth);
 
 };

@@ -44,6 +44,26 @@ float ATGCharacterBase::GetMoveSpeedBaseValue() const
 	return 0.0f;
 }
 
+float ATGCharacterBase::GetHealth() const
+{
+	if (CharAttributeSet.IsValid())
+	{
+		return CharAttributeSet->GetHealth();
+	}
+
+	return 0.0f;
+}
+
+float ATGCharacterBase::GetMaxHealth() const
+{
+	if (CharAttributeSet.IsValid())
+	{
+		return CharAttributeSet->GetMaxHealth();
+	}
+
+	return 0.0f;
+}
+
 // Attribute Intialization
 void ATGCharacterBase::InitializeAttributes()
 {

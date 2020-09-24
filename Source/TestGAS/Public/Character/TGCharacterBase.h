@@ -32,6 +32,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "CharacterBase|Attributes")
 	float GetMoveSpeedBaseValue() const;
 
+	UFUNCTION(BlueprintCallable, Category = "CharacterBase|Attributes")
+	float GetHealth() const;
+
+	UFUNCTION(BlueprintCallable, Category = "CharacterBase|Attributes")
+	float GetMaxHealth() const;
+
 protected:
 
 	// Instead of TWeakObjectPtrs, you could just have UPROPERTY() hard references or no references at all and just call

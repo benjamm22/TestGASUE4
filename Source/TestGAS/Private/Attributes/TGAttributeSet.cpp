@@ -93,6 +93,8 @@ void UTGAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
 	DOREPLIFETIME_CONDITION_NOTIFY(UTGAttributeSet, MoveSpeed, COND_None, REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UTGAttributeSet, Health, COND_None, REPNOTIFY_Always);
+	DOREPLIFETIME_CONDITION_NOTIFY(UTGAttributeSet, MaxHealth, COND_None, REPNOTIFY_Always);
 }
 
 // If max value changes, current value maintains percentage to that value
@@ -103,6 +105,7 @@ void UTGAttributeSet::AdjustAttributeForMaxChange(FGameplayAttributeData& Affect
 	const float CurrentMaxValue = MaxAttribute.GetCurrentValue();
 	if (!FMath::IsNearlyEqual(CurrentMaxValue, NewMaxValue) && AbilityComp)
 	{
+		// Change current value to maintain the current Val / Max percent
 		const float CurrentValue = AffectedAttribute.GetCurrentValue();
 		float NewDelta = (CurrentMaxValue > 0.f) ? (CurrentValue * NewMaxValue / CurrentMaxValue) - CurrentValue : NewMaxValue;
 
@@ -115,5 +118,15 @@ void UTGAttributeSet::AdjustAttributeForMaxChange(FGameplayAttributeData& Affect
 
 void UTGAttributeSet::OnRep_MoveSpeed(const FGameplayAttributeData& OldMoveSpeed)
 {
-	GAMEPLAYATTRIBUTE_REPNOTIFY(UTGAttributeSet, MoveSpeed, OldMoveSpeed)
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UTGAttributeSet, MoveSpeed, OldMoveSpeed);
+}
+
+void UTGAttributeSet::OnRep_Health(const FGameplayAttributeData& OldHealth)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UTGAttributeSet, Health, OldHealth);
+}
+
+void UTGAttributeSet::OnRep_MaxHealth(const FGameplayAttributeData& OldMaxHealth)
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UTGAttributeSet, MaxHealth, OldMaxHealth);
 }

@@ -80,16 +80,16 @@ protected:
 	UFUNCTION()
 	void RotateCameraToCharacter();
 
-	UPROPERTY(EditDefaultsOnly, Category = "ChosenChar|CameraControls")
+	UPROPERTY(EditDefaultsOnly, Category = "CharacterExample|CameraControls")
 	float ZoomAmount;
 
-	UPROPERTY(EditDefaultsOnly, Category = "ChosenChar|CameraControls")
+	UPROPERTY(EditDefaultsOnly, Category = "CharacterExample|CameraControls")
 	float ZoomSensitivity;
 
-	UPROPERTY(EditDefaultsOnly, Category = "ChosenChar|CameraControls")
+	UPROPERTY(EditDefaultsOnly, Category = "CharacterExample|CameraControls")
 	float MinSpringArmLength;
 
-	UPROPERTY(EditDefaultsOnly, Category = "ChosenChar|CameraControls")
+	UPROPERTY(EditDefaultsOnly, Category = "CharacterExample|CameraControls")
 	float MaxSpringArmLength;
 
 	UPROPERTY()
