@@ -12,4 +12,7 @@
  
  Move with either WASD or by holding both mouse buttons down
  
- Currently, source has 1 attribute -> MoveSpeed which is used to override our Character Movement Component
+ Currently, source has 3 attributes -> MoveSpeed which is used to override our Character Movement Component
+ others are WIP
+ 
+ Targeting is now WIP
