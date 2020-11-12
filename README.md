@@ -19,7 +19,7 @@
  
  ### Player Controls:
  
- Forward movement: W & A OR both mouse buttons simultaneous
+ Forward movement: W & A **OR** both mouse buttons simultaneous
  
  Strafe: Q & E
  
