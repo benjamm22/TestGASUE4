@@ -16,7 +16,15 @@
  
  -------------------------------------------------------------------------------------------------------------------------------------
  
- Move with either WASD or by holding both mouse buttons down --> See the TGCharacterExample in Character/Heroes
+ # Game Info:
+ 
+ Forward movement: W & A OR both mouse buttons simultaneous
+ Strafe: Q & E
+ Rotate in place: A & D
+ Control Camera: hold left click and drag
+ Zoom Camera: mouse wheel
+ 
+ See the TGCharacterExample in Character/Heroes
  
  Currently, source has 3 attributes -> MoveSpeed which is used to override our Character Movement Component
  others are WIP
