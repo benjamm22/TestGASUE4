@@ -28,7 +28,7 @@
  
  Zoom Camera: mouse wheel
  
- *See the TGCharacterExample in Character/Heroes
+ **See the TGCharacterExample in Character/Heroes
  
  Currently, source has 3 attributes -> MoveSpeed which is used to override our Character Movement Component
  others are WIP
