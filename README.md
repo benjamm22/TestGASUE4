@@ -13,7 +13,7 @@
  
  Dan's GAS example (STRONG REFERENCE... copy pasted a lot of info from here as comments to remember important info) -- https://github.com/tranek/GASDocumentation
  
- ^ this reference provides a lot of boilerplate code and I used a lot of it myself... most of the boilerplate code is creating and attaching the GAS components such as the AbilitySystemComponent and AttributeSet
+ *^ this reference provides a lot of boilerplate code and I used a lot of it myself... most of the boilerplate code is creating and attaching the GAS components such as the AbilitySystemComponent and AttributeSet*
  
  -------------------------------------------------------------------------------------------------------------------------------------
  
