@@ -16,7 +16,7 @@
  
  -------------------------------------------------------------------------------------------------------------------------------------
  
- ## Player Controls:
+ ### Player Controls:
  
  Forward movement: W & A OR both mouse buttons simultaneous
  
