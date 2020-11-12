@@ -4,7 +4,7 @@
  
  Designed with intent for multiplayer development
  
- **BEWARE: there are a lot of large comments as this was my first attempt at creating a project that uses the GAS and has multiplayer functionality**
+ **There are a lot of large comments as this was my first attempt at creating a project that uses the GAS and has multiplayer functionality**
  
  -------------------------------------------------------------------------------------------------------------------------------------
  
