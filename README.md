@@ -1,10 +1,10 @@
-# TestGASUE4
+# TestGASUE4 - made in UE4.25
 
  UE4 Gameplay Ability System -- with custom MMORPG-Style character movement
  
  Designed with intent for multiplayer development
  
- BEWARE: there are a lot of large comments as this was my first attempt at creating a project that uses the GAS and has multiplayer functionality
+ # BEWARE: there are a lot of large comments as this was my first attempt at creating a project that uses the GAS and has multiplayer functionality
  
  -------------------------------------------------------------------------------------------------------------------------------------
  
