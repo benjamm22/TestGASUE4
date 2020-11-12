@@ -2,11 +2,13 @@
 
  UE4 Gameplay Ability System -- with custom MMO-Style movement
  
+ Designed with intent for multiplayer development
+ 
  -------------------------------------------------------------------------------------------------------------------------------------
  
  GAS -- https://github.com/Pantong51/GASContent/blob/master/README.md\
  
- Dan's GAS example (STRONG REFERENCE... copy pasted a lot of info from here as comments) -- https://github.com/tranek/GASDocumentation
+ Dan's GAS example (STRONG REFERENCE... copy pasted a lot of info from here as comments to remember important info) -- https://github.com/tranek/GASDocumentation
  
  ^ this reference provides a lot of boilerplate code and I used a lot of it myself
  
