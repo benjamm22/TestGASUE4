@@ -1,6 +1,6 @@
 # TestGASUE4
 
- UE4 Gameplay Ability System -- with custom MMO-Style movement
+ UE4 Gameplay Ability System -- with custom MMORPG-Style character movement
  
  Designed with intent for multiplayer development
  
