@@ -16,7 +16,7 @@
  
  -------------------------------------------------------------------------------------------------------------------------------------
  
- ## Game Info:
+ ## Player Controls:
  
  Forward movement: W & A OR both mouse buttons simultaneous
  
@@ -29,6 +29,8 @@
  Zoom Camera: mouse wheel
  
  *See the TGCharacterExample in Character/Heroes*
+ 
+ -------------------------------------------------------------------------------------------------------------------------------------
  
  Currently, source has 3 attributes -> MoveSpeed which is used to override our Character Movement Component
  others are WIP
