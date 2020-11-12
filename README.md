@@ -36,7 +36,7 @@
  -------------------------------------------------------------------------------------------------------------------------------------
  ## GAS Usage:
  
- Currently, source has 3 attributes -> MoveSpeed which is used to override our Character Movement Component
+ Currently, source has 3 attributes -> MoveSpeed is used to override our Character Movement Component
  others are WIP
  
  Targeting is WIP
