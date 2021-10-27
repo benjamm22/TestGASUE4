@@ -11,6 +11,9 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 
+#include "Kismet/KismetSystemLibrary.h"
+
+
 // Constructor
 ATGCharacterExample::ATGCharacterExample(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
@@ -135,7 +138,7 @@ void ATGCharacterExample::MoveRight(float Value)
 	}
 }
 
-// If the camera is locked, just rotate. It it isn't make camera match/follow our rotation
+// If the camera is locked, just rotate. If it isn't make camera match/follow our rotation
 void ATGCharacterExample::Rotate(float Value)
 {
 	if (Value && bLeftClickPressed)
