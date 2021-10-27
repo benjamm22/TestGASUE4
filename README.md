@@ -9,7 +9,7 @@
  -------------------------------------------------------------------------------------------------------------------------------------
  ### Gameplay Ability System (GAS):
  
- GAS -- https://github.com/Pantong51/GASContent/blob/master/README.md\
+ GAS -- https://github.com/Pantong51/GASContent/blob/master/README.md
  
  The GAS a very powerful tool designed by Epic that's used in Fortnite (and was going to be used in Paragon). The system was designed with intention for use in multiplayer (not required though). In a general sense, Gameplay Abilities cause Gameplay Effects. Those Gameplay Effects then cause changes to Attributes. It has a steep learning curve... again this is why I have so many large comments in my code.
  
